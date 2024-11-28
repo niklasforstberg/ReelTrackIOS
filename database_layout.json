@@ -1,0 +1,43 @@
+{
+  "Users": {
+    "UserId": "Primary Key - Unique identifier for each user",
+    "Name": "Name of the family member",
+    "Email": "Email of the user (optional, for login or notifications)"
+  },
+  "Families": {
+    "FamilyId": "Primary Key - Unique identifier for each family",
+    "FamilyName": "Name of the family or group",
+    "FamilyCode": "Unique code for the family, used for joining families",
+    "FamilyAdminId": "Foreign Key - Links to Users.UserId, indicating the admin of the family"
+  },
+  "FamilyMembers": {
+    "FamilyMemberId": "Primary Key - Unique identifier for a family membership",
+    "FamilyId": "Foreign Key - Links to Families.FamilyId",
+    "UserId": "Foreign Key - Links to Users.UserId",
+    "Role": "Role of the user in the family (e.g., 'Parent', 'Child')"
+  },
+  "Movies": {
+    "MovieId": "Primary Key - Unique identifier for each movie",
+    "Title": "Title of the movie",
+    "Genre": "Genre of the movie (optional)",
+    "ReleaseYear": "Year the movie was released (optional)",
+    "ImdbId": "Unique identifier for the movie on IMDb"
+  },
+  "WatchLists": {
+    "WatchListId": "Primary Key - Unique identifier for each watch list",
+    "Name": "Name of the watch list (e.g., 'Weekend Family Night')",
+    "FamilyId": "Foreign Key - Links to Families.FamilyId"
+  },
+  "WatchedMovies": {
+    "WatchedMovieId": "Primary Key - Unique identifier for each watched movie record",
+    "WatchListId": "Foreign Key - Links to WatchLists.WatchListId",
+    "MovieId": "Foreign Key - Links to Movies.MovieId",
+    "WatchedDate": "Date the movie was watched",
+    "ChosenById": "Foreign Key - Links to Users.UserId, indicating who chose the movie"
+  },
+  "WatchListsParticipants": {
+    "WatchListsParticipantId": "Primary Key - Unique identifier for each participant in a watchlist",
+    "WatchListId": "Foreign Key - Links to WatchListId.WatchListId",
+    "FamilyMemberId": "Foreign Key - Links to FamilyMembers.FamilyMemberId"
+  }
+}

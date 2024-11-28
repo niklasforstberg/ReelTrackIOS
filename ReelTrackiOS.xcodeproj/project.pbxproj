@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		35C3D1BF2CF65EB9005FC8DB /* ReelTrackiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C3D1BE2CF65EB9005FC8DB /* ReelTrackiOSApp.swift */; };
+		35C3D1C12CF65EB9005FC8DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C3D1C02CF65EB9005FC8DB /* ContentView.swift */; };
+		35C3D1C32CF65EBB005FC8DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35C3D1C22CF65EBB005FC8DB /* Assets.xcassets */; };
+		35C3D1C62CF65EBB005FC8DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35C3D1C52CF65EBB005FC8DB /* Preview Assets.xcassets */; };
+		35C3D1D02CF65EBC005FC8DB /* ReelTrackiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C3D1CF2CF65EBC005FC8DB /* ReelTrackiOSTests.swift */; };
+		35C3D1DA2CF65EBC005FC8DB /* ReelTrackiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C3D1D92CF65EBC005FC8DB /* ReelTrackiOSUITests.swift */; };
+		35C3D1DC2CF65EBC005FC8DB /* ReelTrackiOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C3D1DB2CF65EBC005FC8DB /* ReelTrackiOSUITestsLaunchTests.swift */; };
+		35C3D1EB2CF663AF005FC8DB /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C3D1EA2CF663AF005FC8DB /* RegisterView.swift */; };
+		35C3D1EF2CF66510005FC8DB /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C3D1EE2CF66510005FC8DB /* APIConfig.swift */; };
+		35C3D1FE2CF726C0005FC8DB /* URLSessionDev.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C3D1FD2CF726C0005FC8DB /* URLSessionDev.swift */; };
+		35C3D2002CF731C6005FC8DB /* FamilySetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C3D1FF2CF731C5005FC8DB /* FamilySetupView.swift */; };
+		35C3D2022CF731D4005FC8DB /* JWTPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C3D2012CF731D4005FC8DB /* JWTPayload.swift */; };
+		35C3D2042CF731E6005FC8DB /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C3D2032CF731E6005FC8DB /* APIClient.swift */; };
+		35C3D2062CF738BB005FC8DB /* APIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C3D2052CF738BB005FC8DB /* APIModels.swift */; };
+		35C3D2082CF73BA1005FC8DB /* StringBase64URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C3D2072CF73BA1005FC8DB /* StringBase64URL.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		35C3D1CC2CF65EBB005FC8DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35C3D1B32CF65EB9005FC8DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35C3D1BA2CF65EB9005FC8DB;
+			remoteInfo = ReelTrackiOS;
+		};
+		35C3D1D62CF65EBC005FC8DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35C3D1B32CF65EB9005FC8DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35C3D1BA2CF65EB9005FC8DB;
+			remoteInfo = ReelTrackiOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		35C3D1BB2CF65EB9005FC8DB /* ReelTrackiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReelTrackiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		35C3D1BE2CF65EB9005FC8DB /* ReelTrackiOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelTrackiOSApp.swift; sourceTree = "<group>"; };
+		35C3D1C02CF65EB9005FC8DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		35C3D1C22CF65EBB005FC8DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		35C3D1C52CF65EBB005FC8DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		35C3D1CB2CF65EBB005FC8DB /* ReelTrackiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReelTrackiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		35C3D1CF2CF65EBC005FC8DB /* ReelTrackiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelTrackiOSTests.swift; sourceTree = "<group>"; };
+		35C3D1D52CF65EBC005FC8DB /* ReelTrackiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReelTrackiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		35C3D1D92CF65EBC005FC8DB /* ReelTrackiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelTrackiOSUITests.swift; sourceTree = "<group>"; };
+		35C3D1DB2CF65EBC005FC8DB /* ReelTrackiOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelTrackiOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		35C3D1EA2CF663AF005FC8DB /* RegisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		35C3D1EE2CF66510005FC8DB /* APIConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIConfig.swift; path = Networking/APIConfig.swift; sourceTree = "<group>"; };
+		35C3D1F22CF71C74005FC8DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35C3D1FD2CF726C0005FC8DB /* URLSessionDev.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = URLSessionDev.swift; path = Networking/URLSessionDev.swift; sourceTree = "<group>"; };
+		35C3D1FF2CF731C5005FC8DB /* FamilySetupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FamilySetupView.swift; path = Views/FamilySetupView.swift; sourceTree = "<group>"; };
+		35C3D2012CF731D4005FC8DB /* JWTPayload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JWTPayload.swift; path = Models/JWTPayload.swift; sourceTree = "<group>"; };
+		35C3D2032CF731E6005FC8DB /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIClient.swift; path = Networking/APIClient.swift; sourceTree = "<group>"; };
+		35C3D2052CF738BB005FC8DB /* APIModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIModels.swift; path = Models/APIModels.swift; sourceTree = "<group>"; };
+		35C3D2072CF73BA1005FC8DB /* StringBase64URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringBase64URL.swift; path = Extensions/StringBase64URL.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35C3D1B82CF65EB9005FC8DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35C3D1C82CF65EBB005FC8DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35C3D1D22CF65EBC005FC8DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35C3D1B22CF65EB9005FC8DB = {
+			isa = PBXGroup;
+			children = (
+				35C3D1BD2CF65EB9005FC8DB /* ReelTrackiOS */,
+				35C3D1CE2CF65EBB005FC8DB /* ReelTrackiOSTests */,
+				35C3D1D82CF65EBC005FC8DB /* ReelTrackiOSUITests */,
+				35C3D1BC2CF65EB9005FC8DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		35C3D1BC2CF65EB9005FC8DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35C3D1BB2CF65EB9005FC8DB /* ReelTrackiOS.app */,
+				35C3D1CB2CF65EBB005FC8DB /* ReelTrackiOSTests.xctest */,
+				35C3D1D52CF65EBC005FC8DB /* ReelTrackiOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35C3D1BD2CF65EB9005FC8DB /* ReelTrackiOS */ = {
+			isa = PBXGroup;
+			children = (
+				35C3D2072CF73BA1005FC8DB /* StringBase64URL.swift */,
+				35C3D2052CF738BB005FC8DB /* APIModels.swift */,
+				35C3D2032CF731E6005FC8DB /* APIClient.swift */,
+				35C3D2012CF731D4005FC8DB /* JWTPayload.swift */,
+				35C3D1FF2CF731C5005FC8DB /* FamilySetupView.swift */,
+				35C3D1FD2CF726C0005FC8DB /* URLSessionDev.swift */,
+				35C3D1EE2CF66510005FC8DB /* APIConfig.swift */,
+				35C3D1EA2CF663AF005FC8DB /* RegisterView.swift */,
+				35C3D1BE2CF65EB9005FC8DB /* ReelTrackiOSApp.swift */,
+				35C3D1C02CF65EB9005FC8DB /* ContentView.swift */,
+				35C3D1C22CF65EBB005FC8DB /* Assets.xcassets */,
+				35C3D1C42CF65EBB005FC8DB /* Preview Content */,
+				35C3D1F22CF71C74005FC8DB /* Info.plist */,
+			);
+			path = ReelTrackiOS;
+			sourceTree = "<group>";
+		};
+		35C3D1C42CF65EBB005FC8DB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				35C3D1C52CF65EBB005FC8DB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		35C3D1CE2CF65EBB005FC8DB /* ReelTrackiOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				35C3D1CF2CF65EBC005FC8DB /* ReelTrackiOSTests.swift */,
+			);
+			path = ReelTrackiOSTests;
+			sourceTree = "<group>";
+		};
+		35C3D1D82CF65EBC005FC8DB /* ReelTrackiOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				35C3D1D92CF65EBC005FC8DB /* ReelTrackiOSUITests.swift */,
+				35C3D1DB2CF65EBC005FC8DB /* ReelTrackiOSUITestsLaunchTests.swift */,
+			);
+			path = ReelTrackiOSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		35C3D1BA2CF65EB9005FC8DB /* ReelTrackiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35C3D1DF2CF65EBC005FC8DB /* Build configuration list for PBXNativeTarget "ReelTrackiOS" */;
+			buildPhases = (
+				35C3D1B72CF65EB9005FC8DB /* Sources */,
+				35C3D1B82CF65EB9005FC8DB /* Frameworks */,
+				35C3D1B92CF65EB9005FC8DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReelTrackiOS;
+			productName = ReelTrackiOS;
+			productReference = 35C3D1BB2CF65EB9005FC8DB /* ReelTrackiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		35C3D1CA2CF65EBB005FC8DB /* ReelTrackiOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35C3D1E22CF65EBC005FC8DB /* Build configuration list for PBXNativeTarget "ReelTrackiOSTests" */;
+			buildPhases = (
+				35C3D1C72CF65EBB005FC8DB /* Sources */,
+				35C3D1C82CF65EBB005FC8DB /* Frameworks */,
+				35C3D1C92CF65EBB005FC8DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35C3D1CD2CF65EBB005FC8DB /* PBXTargetDependency */,
+			);
+			name = ReelTrackiOSTests;
+			productName = ReelTrackiOSTests;
+			productReference = 35C3D1CB2CF65EBB005FC8DB /* ReelTrackiOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		35C3D1D42CF65EBC005FC8DB /* ReelTrackiOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35C3D1E52CF65EBC005FC8DB /* Build configuration list for PBXNativeTarget "ReelTrackiOSUITests" */;
+			buildPhases = (
+				35C3D1D12CF65EBC005FC8DB /* Sources */,
+				35C3D1D22CF65EBC005FC8DB /* Frameworks */,
+				35C3D1D32CF65EBC005FC8DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35C3D1D72CF65EBC005FC8DB /* PBXTargetDependency */,
+			);
+			name = ReelTrackiOSUITests;
+			productName = ReelTrackiOSUITests;
+			productReference = 35C3D1D52CF65EBC005FC8DB /* ReelTrackiOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		35C3D1B32CF65EB9005FC8DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					35C3D1BA2CF65EB9005FC8DB = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					35C3D1CA2CF65EBB005FC8DB = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 35C3D1BA2CF65EB9005FC8DB;
+					};
+					35C3D1D42CF65EBC005FC8DB = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 35C3D1BA2CF65EB9005FC8DB;
+					};
+				};
+			};
+			buildConfigurationList = 35C3D1B62CF65EB9005FC8DB /* Build configuration list for PBXProject "ReelTrackiOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 35C3D1B22CF65EB9005FC8DB;
+			productRefGroup = 35C3D1BC2CF65EB9005FC8DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				35C3D1BA2CF65EB9005FC8DB /* ReelTrackiOS */,
+				35C3D1CA2CF65EBB005FC8DB /* ReelTrackiOSTests */,
+				35C3D1D42CF65EBC005FC8DB /* ReelTrackiOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		35C3D1B92CF65EB9005FC8DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35C3D1C62CF65EBB005FC8DB /* Preview Assets.xcassets in Resources */,
+				35C3D1C32CF65EBB005FC8DB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35C3D1C92CF65EBB005FC8DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35C3D1D32CF65EBC005FC8DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35C3D1B72CF65EB9005FC8DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35C3D2062CF738BB005FC8DB /* APIModels.swift in Sources */,
+				35C3D1C12CF65EB9005FC8DB /* ContentView.swift in Sources */,
+				35C3D2022CF731D4005FC8DB /* JWTPayload.swift in Sources */,
+				35C3D1EB2CF663AF005FC8DB /* RegisterView.swift in Sources */,
+				35C3D2002CF731C6005FC8DB /* FamilySetupView.swift in Sources */,
+				35C3D1BF2CF65EB9005FC8DB /* ReelTrackiOSApp.swift in Sources */,
+				35C3D1FE2CF726C0005FC8DB /* URLSessionDev.swift in Sources */,
+				35C3D2082CF73BA1005FC8DB /* StringBase64URL.swift in Sources */,
+				35C3D1EF2CF66510005FC8DB /* APIConfig.swift in Sources */,
+				35C3D2042CF731E6005FC8DB /* APIClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35C3D1C72CF65EBB005FC8DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35C3D1D02CF65EBC005FC8DB /* ReelTrackiOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35C3D1D12CF65EBC005FC8DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35C3D1DC2CF65EBC005FC8DB /* ReelTrackiOSUITestsLaunchTests.swift in Sources */,
+				35C3D1DA2CF65EBC005FC8DB /* ReelTrackiOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		35C3D1CD2CF65EBB005FC8DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35C3D1BA2CF65EB9005FC8DB /* ReelTrackiOS */;
+			targetProxy = 35C3D1CC2CF65EBB005FC8DB /* PBXContainerItemProxy */;
+		};
+		35C3D1D72CF65EBC005FC8DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35C3D1BA2CF65EB9005FC8DB /* ReelTrackiOS */;
+			targetProxy = 35C3D1D62CF65EBC005FC8DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		35C3D1DD2CF65EBC005FC8DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		35C3D1DE2CF65EBC005FC8DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		35C3D1E02CF65EBC005FC8DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ReelTrackiOS/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = ReelTrackiOS/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.forstberg.ReelTrackiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		35C3D1E12CF65EBC005FC8DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ReelTrackiOS/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = ReelTrackiOS/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.forstberg.ReelTrackiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		35C3D1E32CF65EBC005FC8DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.forstberg.ReelTrackiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReelTrackiOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ReelTrackiOS";
+			};
+			name = Debug;
+		};
+		35C3D1E42CF65EBC005FC8DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.forstberg.ReelTrackiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReelTrackiOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ReelTrackiOS";
+			};
+			name = Release;
+		};
+		35C3D1E62CF65EBC005FC8DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.forstberg.ReelTrackiOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ReelTrackiOS;
+			};
+			name = Debug;
+		};
+		35C3D1E72CF65EBC005FC8DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.forstberg.ReelTrackiOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ReelTrackiOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		35C3D1B62CF65EB9005FC8DB /* Build configuration list for PBXProject "ReelTrackiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35C3D1DD2CF65EBC005FC8DB /* Debug */,
+				35C3D1DE2CF65EBC005FC8DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35C3D1DF2CF65EBC005FC8DB /* Build configuration list for PBXNativeTarget "ReelTrackiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35C3D1E02CF65EBC005FC8DB /* Debug */,
+				35C3D1E12CF65EBC005FC8DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35C3D1E22CF65EBC005FC8DB /* Build configuration list for PBXNativeTarget "ReelTrackiOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35C3D1E32CF65EBC005FC8DB /* Debug */,
+				35C3D1E42CF65EBC005FC8DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35C3D1E52CF65EBC005FC8DB /* Build configuration list for PBXNativeTarget "ReelTrackiOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35C3D1E62CF65EBC005FC8DB /* Debug */,
+				35C3D1E72CF65EBC005FC8DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 35C3D1B32CF65EB9005FC8DB /* Project object */;
+}
